@@ -10,6 +10,10 @@ Effortlessly organize files in selected directories with this user-friendly File
 - GUI interface with tabs for each selected directory.
 - Displays filenames and types in scrollable text boxes with clickable links to open files.
 - Automatically organizes files in the background.
+## Screenshots
+![Intital screen](FO-initalscreen.png)
+![Directories added](FO-directoriesadded.png)
+![Result](FO-results.png)
 ## Requirements
 - Python 3.7+
 - Required Libraries:
