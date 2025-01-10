@@ -11,7 +11,7 @@ Effortlessly organize files in selected directories with this user-friendly File
 - Displays filenames and types in scrollable text boxes with clickable links to open files.
 - Automatically organizes files in the background.
 ## Screenshots
-![Intital screen](FO-initalscreen.png)
+![Intital screen](FO-initialscreen.png)
 ![Directories added](FO-directoriesadded.png)
 ![Result](FO-results.png)
 ## Requirements
