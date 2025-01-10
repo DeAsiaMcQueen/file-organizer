@@ -37,7 +37,7 @@ Effortlessly organize files in selected directories with this user-friendly File
 5. Click on file names to open them in your default application.
 ## Contributing
 We welcome contributions from the community! Please see our [CONTRIBUTING](CONTRIBUTING.md) file for detailed guidelines.
-When submitting a pull request, follow the steps outlined in our [PULL_REQUEST_TEMPLATE](.github/PULL_REQUEST_TEMPLATE.md).
+When submitting a pull request, follow the steps outlined in our [PULL_REQUEST_TEMPLATE](PULL_REQUEST_TEMPLATE.md).
 ## Code of Conduct
 This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 ## Changelog
