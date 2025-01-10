@@ -1,4 +1,9 @@
 # File Organizer
+![Build Status](https://github.com/DeAsiaMcQueen/file-organizer/actions/workflows/build.yml/badge.svg)
+![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+![License](https://img.shields.io/github/license/DeAsiaMcQueen/file-organizer)
+![GitHub issues](https://img.shields.io/github/issues/DeAsiaMcQueen/file-organizer)
+![GitHub stars](https://img.shields.io/github/stars/DeAsiaMcQueen/file-organizer?style=social)
 Effortlessly organize files in selected directories with this user-friendly File Organizer. Categorize files by type, view them in an intuitive GUI with tabs for each directory, and open files via clickable links. It is designed to run automatically in the background, keeping your directories tidy.
 ## Features
 - Categorizes files into predefined types (e.g., Images, Documents, Videos, etc.).
