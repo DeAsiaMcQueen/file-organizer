@@ -1,5 +1,5 @@
 # File Organizer
-![Build Status](https://github.com/DeAsiaMcQueen/file-organizer/actions/workflows/build.yml/badge.svg)
+![Last Update](https://img.shields.io/github/last-commit/DeAsiaMcQueen/file-organizer?label=Last%20Update)
 ![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/github/license/DeAsiaMcQueen/file-organizer)
 ![GitHub issues](https://img.shields.io/github/issues/DeAsiaMcQueen/file-organizer)
