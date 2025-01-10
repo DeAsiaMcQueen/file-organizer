@@ -16,15 +16,30 @@ class FileOrganizerApp:
         self.root = root
         self.root.title("File Organizer")
         self.root.geometry("1000x700")
+        # Add scrollable frame for the entire GUI
+        self.main_frame = ttk.Frame(root)
+        self.main_frame.pack(fill="both", expand=True)
+        # Add canvas for scrolling
+        self.canvas = tk.Canvas(self.main_frame)
+        self.scrollbar = ttk.Scrollbar(self.main_frame, orient="vertical", command=self.canvas.yview)
+        self.scrollable_frame = ttk.Frame(self.canvas)
+        self.scrollable_frame.bind(
+            "<Configure>",
+            lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+        )
+        self.canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
+        self.canvas.configure(yscrollcommand=self.scrollbar.set)
+        self.canvas.pack(side="left", fill="both", expand=True)
+        self.scrollbar.pack(side="right", fill="y")
         # Add directory section
-        ttk.Label(root, text="Select Directories to Organize:").pack(pady=5)
+        ttk.Label(self.scrollable_frame, text="Select Directories to Organize:").pack(pady=5)
         self.directory_list = []
-        self.directory_frame = ttk.Frame(root)
+        self.directory_frame = ttk.Frame(self.scrollable_frame)
         self.directory_frame.pack(fill="both", expand=True, padx=10, pady=5)
-        ttk.Button(root, text="Add Directory", command=self.add_directory).pack(pady=5)
-        ttk.Button(root, text="Start Organizing", command=self.start_organizing).pack(pady=5)
+        ttk.Button(self.scrollable_frame, text="Add Directory", command=self.add_directory).pack(pady=5)
+        ttk.Button(self.scrollable_frame, text="Start Organizing", command=self.start_organizing).pack(pady=5)
         # Tabs for organized files
-        self.tab_control = ttk.Notebook(root)
+        self.tab_control = ttk.Notebook(self.scrollable_frame)
         self.tab_control.pack(fill="both", expand=True, padx=10, pady=5)
     def add_directory(self):
         """Allow user to add a directory to be organized."""
